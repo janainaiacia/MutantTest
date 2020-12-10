@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+    <title>Usando Get</title>
+
+
+    <script src="@Url.Content("~/lib/jquery/dist/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/lib/jquery-validation-unobstrusive/jquery.validade.unobtrusive.js")" type="text/javascript"></script>
+    <script type="text/jscript">
+        function getUsers() {
+            var url = "/Users/getUsers";
+            $.get(url, null, function (data) {
+                $("#txtUsers").val(data);
+            });
+        }
+
+        function saveUsers() {
+
+            if ($("#txtUsers").val() !== '') {
+                var url = "/Users/saveUsers";
+                var Json = $("#txtUsers").val();
+                $.post(url, { json: Json }, function (data) {
+                    if (data === 'OK') {
+                        alert("Dados Salvos");
+                    }
+                    else {
+                        alert(data);
+                    }
+                });
+            }
+            else {
+                alert("Colete os dados primeiramente");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="width:100%; padding:10px;">
+        <button id="btnBaixar" type="button" onclick="getUsers();">Baixar Dados</button>
+        &nbsp;
+        <button id="btnSalvar" type="button" onclick="saveUsers();">Salvar Dados</button>
+    </div>
+    <textarea id="txtUsers" style="width:90%; height:90%"></textarea>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutantTestApp", "MutantTestApp\MutantTestApp.csproj", "{9C09953D-ECA5-4017-8882-8625730400A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutantTestWebApi", "MutantTestWebApi\MutantTestWebApi.csproj", "{17E73CC1-2B20-4009-9FB0-94BC553F5AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C09953D-ECA5-4017-8882-8625730400A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C09953D-ECA5-4017-8882-8625730400A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C09953D-ECA5-4017-8882-8625730400A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C09953D-ECA5-4017-8882-8625730400A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E73CC1-2B20-4009-9FB0-94BC553F5AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E73CC1-2B20-4009-9FB0-94BC553F5AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E73CC1-2B20-4009-9FB0-94BC553F5AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E73CC1-2B20-4009-9FB0-94BC553F5AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D625B351-8902-486B-A993-5CF9DAF164D3}
+	EndGlobalSection
+EndGlobal
