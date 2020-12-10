@@ -2,6 +2,15 @@ Banco de dados utilizado: MySQL
 User: root
 Password: root123*
 
+Utilizado code first.
+Para criar o banco de dados utilizar o seguinte comando:
+
+dotnet ef database update InitialCreate
+dotnet ef database update AddEmail
+
 .NET Core 3.1
+Utilizado Swagger para API
 
 Consumindo API externa e inserindo dados no banco através da API Criada
+
+
