@@ -21,6 +21,6 @@ namespace MutantTestApp.Models
         [JsonProperty("bs")]
         public string Bs { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        //public ICollection<User> Users { get; set; }
     }
 }

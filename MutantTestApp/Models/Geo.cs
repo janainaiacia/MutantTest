@@ -4,9 +4,9 @@ using Newtonsoft.Json;
 
 namespace MutantTestApp.Models
 {
-    public class Geolocation
+    public class Geo
     {
-        public Geolocation()
+        public Geo()
         {
         }
 
@@ -18,6 +18,6 @@ namespace MutantTestApp.Models
         [JsonProperty("lng")]
         public string Lng { get; set; }
 
-        public ICollection<Address> Addresses { get; set; }
+        //public ICollection<Address> Addresses { get; set; }
     }
 }

@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/janainaiacia/Projects/MutantTest/MutantTestWebApi/MutantTestWebApi.csproj": {}
+    "D:\\projetos\\MutantTest\\MutantTestWebApi\\MutantTestWebApi.csproj": {}
   },
   "projects": {
-    "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/MutantTestApp.csproj": {
+    "D:\\projetos\\MutantTest\\MutantTestApp\\MutantTestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/MutantTestApp.csproj",
+        "projectUniqueName": "D:\\projetos\\MutantTest\\MutantTestApp\\MutantTestApp.csproj",
         "projectName": "MutantTestApp",
-        "projectPath": "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/MutantTestApp.csproj",
-        "packagesPath": "/Users/janainaiacia/.nuget/packages/",
-        "outputPath": "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/obj/",
+        "projectPath": "D:\\projetos\\MutantTest\\MutantTestApp\\MutantTestApp.csproj",
+        "packagesPath": "C:\\Users\\janaina\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MutantTest\\MutantTestApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/janainaiacia/.config/NuGet/NuGet.Config"
+          "C:\\Users\\janaina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,6 +69,10 @@
               "target": "Package",
               "version": "[3.1.10, )"
             },
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -79,6 +88,10 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.22, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.12, )"
             }
           },
           "imports": [
@@ -99,34 +112,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/janainaiacia/Projects/MutantTest/MutantTestWebApi/MutantTestWebApi.csproj": {
+    "D:\\projetos\\MutantTest\\MutantTestWebApi\\MutantTestWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/janainaiacia/Projects/MutantTest/MutantTestWebApi/MutantTestWebApi.csproj",
+        "projectUniqueName": "D:\\projetos\\MutantTest\\MutantTestWebApi\\MutantTestWebApi.csproj",
         "projectName": "MutantTestWebApi",
-        "projectPath": "/Users/janainaiacia/Projects/MutantTest/MutantTestWebApi/MutantTestWebApi.csproj",
-        "packagesPath": "/Users/janainaiacia/.nuget/packages/",
-        "outputPath": "/Users/janainaiacia/Projects/MutantTest/MutantTestWebApi/obj/",
+        "projectPath": "D:\\projetos\\MutantTest\\MutantTestWebApi\\MutantTestWebApi.csproj",
+        "packagesPath": "C:\\Users\\janaina\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MutantTest\\MutantTestWebApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/janainaiacia/.config/NuGet/NuGet.Config"
+          "C:\\Users\\janaina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/MutantTestApp.csproj": {
-                "projectPath": "/Users/janainaiacia/Projects/MutantTest/MutantTestApp/MutantTestApp.csproj"
+              "D:\\projetos\\MutantTest\\MutantTestApp\\MutantTestApp.csproj": {
+                "projectPath": "D:\\projetos\\MutantTest\\MutantTestApp\\MutantTestApp.csproj"
               }
             }
           }
@@ -141,6 +159,24 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
@@ -168,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
 using MutantTestApp.Models;
+using Newtonsoft.Json;
 
 namespace MutantTestApp.Controllers
 {
@@ -38,15 +40,34 @@ namespace MutantTestApp.Controllers
             return jsonUser;
         }
 
-        public string saveUsers(string json)
+        public async Task<string> saveUsers(string json)
         {
             string result = string.Empty;
 
             try
             {
-                List<User> users = Newtonsoft.Json.JsonConvert.DeserializeObject<List<User>>(json);
+                List<User> users = JsonConvert.DeserializeObject<List<User>>(json);              
+              
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("https://localhost:44335");
+                    users = users.Where(x => x.Address.Suite.Contains("Suite")).ToList();
+
+                    for (int i = 0; i < users.Count; i++)
+                    {
+                        var serializedUser = JsonConvert.SerializeObject(users[i]);
+                        var content = new StringContent(serializedUser, Encoding.UTF8, "application/json");
+
+                        HttpResponseMessage responseMessage = await client.PostAsync("/api/Users", content);
+
+                        if (responseMessage.IsSuccessStatusCode)
+                        {
+                            result = "OK";
+                        }
+                    }
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 result = ex.Message + " - " + ex.StackTrace;
             }

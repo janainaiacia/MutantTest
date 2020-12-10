@@ -18,6 +18,10 @@ namespace MutantTestApp.Models
         [JsonProperty("username")]
         public string  Username { get; set; }
 
+
+        [JsonProperty("email")]
+        public string Email { get; set; }
+
         public int AddressId { get; set; }
         [JsonProperty("address")]
         public Address Address { get; set; }

@@ -24,10 +24,10 @@ namespace MutantTestApp.Models
         [JsonProperty("zipcode")]
         public string Zipcode { get; set; }
         
-        public int GeolocationId { get; set; }
+        public int GeoId { get; set; }
         [JsonProperty("geo")]
-        public Geolocation Geolocation { get; set; }
+        public Geo Geo { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        //public ICollection<User> Users { get; set; }
     }
 }

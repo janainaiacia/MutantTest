@@ -1,0 +1,7 @@
+Banco de dados utilizado: MySQL
+User: root
+Password: root123*
+
+.NET Core 3.1
+
+Consumindo API externa e inserindo dados no banco através da API Criada

@@ -14,9 +14,9 @@ namespace MutantTestApp.Models
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Address> Adresses { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
-        public DbSet<Geolocation> Geolocations { get; set; }
+        public DbSet<Geo> Geo { get; set; }
 
         public DbSet<Company> Companies { get; set; }
 

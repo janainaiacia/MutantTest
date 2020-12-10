@@ -1,3 +1,4 @@
+using log4net.Repository.Hierarchy;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,8 @@ namespace MutantTestApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //loggerFactory.AddLog4Net();//trying to configure logs
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
